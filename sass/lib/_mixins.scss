@@ -1,3 +1,73 @@
-// *****************************
-// +++++++ $MIXINS ++++++
-// *****************************
+/* *****************************
+ +++++++ $MIXINS ++++++
+ ***************************** */
+
+/* Mixin FontFace */
+@mixin FontFace {
+	@each $nombre in "acuminPro", "helvetica", "helvetica_Italic",
+		"helvetica_Bold"
+	{
+		@font-face {
+			font-family: $nombre;
+			font-style: normal;
+			font-weight: normal;
+			src: local($nombre),
+				url("../assets/fonts/#{$nombre}.woff") format("woff"),
+				url("../assets/fonts/#{$nombre}.woff2") format("woff2");
+		}
+	}
+}
+
+/* Mixin tipografia */
+@mixin titulo-banner {
+	font-family: helvetica;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	color: map-get(map-get($colores, grises), blanco);
+}
+
+@mixin titulo-sobre {
+	font-family: helvetica;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.42;
+	text-align: left;
+	color: map-get(map-get($colores, grises), blanco);
+}
+
+@mixin titulo-figcaption {
+	font-family: acuminPro;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.63;
+	text-align: left;
+	color: map-get(map-get($colores, grises), negro);
+}
+
+@mixin texto-banner {
+	font-family: helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.25;
+	text-align: left;
+	color: map-get(map-get($colores, grises), blanco);
+}
+
+@mixin basica {
+	font-family: helvetica;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: left;
+	color: map-get(map-get($colores, grises), blanco);
+}
+
+@mixin parrafo-figcaption {
+	font-family: helvetica;
+	font-size: 13px;
+	font-style: oblique;
+	line-height: 2;
+	text-align: left;
+	color: map-get(map-get($colores, grises), grisOscuro);
+}

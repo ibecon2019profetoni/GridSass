@@ -1,5 +1,39 @@
-// *****************************
-// +++++++ $TIPOGRAFIA ++++++
-// *****************************
+/* *****************************
+ +++++++ $TIPOGRAFIA ++++++
+ ***************************** */
 
+/* FontFace */
+@include FontFace;
 
+/* HTML */
+html {
+	@include basica;
+}
+
+/* HEADER */
+.banner {
+	&__texto {
+		&__titulo {
+			@include titulo-banner;
+		}
+		&__menu {
+			@include texto-banner;
+			&--travel,
+			&--best {
+				@include texto-banner;
+				text-decoration: none;
+			}
+		}
+		&__avatar {
+			@include texto-banner;
+		}
+	}
+}
+
+/* MAIN */
+.postG01,
+.postG02 {
+	& figcaption h4 {
+		@include titulo-sobre;
+	}
+}

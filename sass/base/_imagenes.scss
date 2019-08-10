@@ -1,0 +1,16 @@
+/* *****************************
+ +++++++ $IMAGENES ++++++
+ ***************************** */
+
+/* Texto encima de las img's */
+.postG01,
+.postG02 {
+	position: relative;
+
+	figcaption {
+		color: map-get(map-get($colores, grises), blanco);
+		position: absolute;
+		left: 3rem;
+		bottom: 25%;
+	}
+}

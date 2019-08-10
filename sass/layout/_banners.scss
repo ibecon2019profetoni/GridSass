@@ -1,3 +1,18 @@
-// *****************************
-// +++++++ $BANNERS ++++++
-// *****************************
+/* *****************************
+ +++++++ $BANNERS ++++++
+ ***************************** */
+
+/* BANNER */
+.banner {
+	// Tamaño de la caja
+	height: 450px;
+
+	// Fondo Múltiple
+	background: url(../assets/img/desktop/@1x/oscurecer.png),
+		url(../assets/img/desktop/@1x/banner.jpg) center / cover no-repeat;
+
+	// Texto
+	.banner__texto {
+		color: white;
+	}
+}

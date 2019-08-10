@@ -1,11 +1,13 @@
-// *****************************
-// +++++++ $MENUS ++++++
-// *****************************
+/* *****************************
+ +++++++ $MENUS ++++++
+ ***************************** */
 
-input,.desplegable{
-    display: none;
+/* Menu desplegable */
+input,
+.desplegable {
+	display: none;
 }
 
-input:checked ~ .desplegable{
-    display: block;
+input:checked ~ .desplegable {
+	display: block;
 }

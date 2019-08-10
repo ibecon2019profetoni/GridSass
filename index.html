@@ -1,89 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-        <!-- Metadatos Web -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-        <!-- HTML Meta Tags -->
-        <title>Plantilla</title>
-        <meta name="description" content="">
-    
-        <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="http://">
-    
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="http://">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="http://">
-    
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="SEAT">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:image" content="http://">
+	<head>
+		<!-- Metadatos Web -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+		<!-- HTML Meta Tags -->
+		<title>Plantilla</title>
+		<meta name="description" content="" />
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="" />
+		<meta itemprop="description" content="" />
+		<meta itemprop="image" content="http://" />
 
-        <!-- Nuestro CSS Compilado -->
-        <link rel="stylesheet" href="css/estilos.css">
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="http://" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="http://" />
 
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="SEAT" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="http://" />
 
-</head>
-<body>
+		<!-- FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
 
-        <!--
+		<!-- Nuestro CSS Compilado -->
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<!--
         *
         * Bloque HEADER
         *
         -->
-        <header>
-<!-- Menú Móvil -->
+		<header>
+			<figure class="banner">
+				<figcaption class="banner__texto">
+					<h3 class="banner__texto__titulo">
+						AMAZING PLACES IN AMERICA TO VISIT
+					</h3>
+					<nav class="banner__texto__menu">
+						<a class="banner__texto__menu--travel" href=""
+							>TRAVELGUIDE</a
+						>
+						<a class="banner__texto__menu--best" href=""
+							>BEST PLACES</a
+						>
+					</nav>
+					<a class="banner__texto__avatar" href=""
+						>by Steven Voorhees</a
+					>
+				</figcaption>
+			</figure>
+		</header>
 
-<!-- Icono -->
-<input type="checkbox" id="boton">
-<label for="boton">
-	<i class="fas fa-bars"></i>
-</label>
-<!-- Desplegable -->
-<ul class="desplegable">
-	<li>item1</li>
-	<li>item2</li>
-	<li>item3</li>
-	<li>item4</li>
-	<li>item5</li>
-</ul>
-
-        </header>
-    
-        <!--
+		<!--
         *
         * Bloque CONTENIDO
         *
         -->
-        <section>
+		<main>
+			<div class="grid_main">
+				<figure class="postG01">
+					<picture>
+						<!-- Alta resolución para Escritorio -->
+						<source
+							srcset="
+								assets/img/desktop/@1x/Image.png 1x,
+								assets/img/desktop/@1x/Image.png 2x
+							"
+							media="(max-width:1024px)"
+						/>
 
+						<!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+						<img
+							src="assets/img/desktop/@1x/Image.png"
+							alt="Explicación de la imagen"
+						/>
+					</picture>
+					<figcaption>
+						<h4>Cras vitae mattis lacus. Integer sit amet.</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Aspernatur, perspiciatis.
+						</p>
+					</figcaption>
+				</figure>
+				<figure class="postG02">
+					<picture>
+						<!-- Alta resolución para Escritorio -->
+						<source
+							srcset="
+								assets/img/desktop/@1x/Image-1.png 1x,
+								assets/img/desktop/@1x/Image.png   2x
+							"
+							media="(max-width:1024px)"
+						/>
 
-        </section>
+						<!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+						<img
+							src="assets/img/desktop/@1x/Image-1.png"
+							alt="Explicación de la imagen"
+						/>
+					</picture>
+					<figcaption>
+						<h4>Cras vitae mattis lacus. Integer sit amet.</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Aspernatur, perspiciatis.
+						</p>
+					</figcaption>
+				</figure>
+				<figure class="postP01">
+					<picture>
+						<!-- Alta resolución para Escritorio -->
+						<source
+							srcset="
+								assets/img/desktop/@1x/belinda-fewings-LTBdf3BNq7M-unsplash.png 1x,
+								assets/img/desktop/@1x/Image.png                                2x
+							"
+							media="(max-width:1024px)"
+						/>
 
-        <!--
-        *
-        * Bloque FOOTER
-        *
-        -->
-        <footer>
-                
-        </footer>
+						<!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+						<img
+							src="assets/img/desktop/@1x/belinda-fewings-LTBdf3BNq7M-unsplash.png"
+							alt="Explicación de la imagen"
+						/>
+					</picture>
+					<figcaption>
+						<h4>Small Title</h4>
+						<p></p>
+					</figcaption>
+				</figure>
+				<figure class="postP02">
+					<picture>
+						<!-- Alta resolución para Escritorio -->
+						<source
+							srcset="
+								assets/img/desktop/@1x/5.png     1x,
+								assets/img/desktop/@1x/Image.png 2x
+							"
+							media="(max-width:1024px)"
+						/>
 
+						<!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+						<img
+							src="assets/img/desktop/@1x/5.png"
+							alt="Explicación de la imagen"
+						/>
+					</picture>
+					<figcaption>
+						<h4>Small Title</h4>
+						<p></p>
+					</figcaption>
+				</figure>
 
-</body>
+				<figure class="postP03">
+					<picture>
+						<!-- Alta resolución para Escritorio -->
+						<source
+							srcset="
+								assets/img/desktop/@1x/5-1.png   1x,
+								assets/img/desktop/@1x/Image.png 2x
+							"
+							media="(max-width:1024px)"
+						/>
+
+						<!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+						<img
+							src="assets/img/desktop/@1x/5-1.png"
+							alt="Explicación de la imagen"
+						/>
+					</picture>
+					<figcaption>
+						<h4>Small Title</h4>
+						<p></p>
+					</figcaption>
+				</figure>
+			</div>
+		</main>
+	</body>
 </html>
-
-

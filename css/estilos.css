@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* *****************************
+ +++++++ $RESET ++++++
+ ***************************** */
 /* -------------------- */
 /* MINIMAL CSS RESET */
 /* -------------------- */
@@ -5,15 +9,27 @@ html {
   box-sizing: border-box;
   font-size: 16px; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
 img {
@@ -28,34 +44,114 @@ html {
   box-sizing: border-box;
   font-size: 16px; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
 img {
   max-width: 100%;
   height: auto; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -64,43 +160,227 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.linksExternos {
-  font-size: 1rem; }
-  .linksExternos__externo1 {
-    font-weight: 900; }
-    .linksExternos__externo1:hover {
-      font-size: 2rem; }
-    .linksExternos__externo1:actived {
-      font-size: 2.4rem; }
-  .linksExternos__externo2 {
-    font-weight: 600; }
-  .linksExternos__externo3 {
-    font-weight: 300; }
+/* *****************************
+ +++++++ $VARIABLES ++++++
+ ***************************** */
+/* COLORES */
+/* TAMAÑOS EN H'S */
+/* *****************************
+ +++++++ $MIXINS ++++++
+ ***************************** */
+/* Mixin FontFace */
+/* Mixin tipografia */
+/* *****************************
+ +++++++ $PLACEHOLDER ++++++
+ ***************************** */
+/* *****************************
+ +++++++ $TIPOGRAFIA ++++++
+ ***************************** */
+/* FontFace */
+@font-face {
+  font-family: "acuminPro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("acuminPro"), url("../assets/fonts/acuminPro.woff") format("woff"), url("../assets/fonts/acuminPro.woff2") format("woff2"); }
 
-input, .desplegable {
+@font-face {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("helvetica"), url("../assets/fonts/helvetica.woff") format("woff"), url("../assets/fonts/helvetica.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "helvetica_Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("helvetica_Italic"), url("../assets/fonts/helvetica_Italic.woff") format("woff"), url("../assets/fonts/helvetica_Italic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "helvetica_Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("helvetica_Bold"), url("../assets/fonts/helvetica_Bold.woff") format("woff"), url("../assets/fonts/helvetica_Bold.woff2") format("woff2"); }
+
+/* HTML */
+html {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: left;
+  color: #fff; }
+
+/* HEADER */
+.banner__texto__titulo {
+  font-family: helvetica;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff; }
+
+.banner__texto__menu {
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #fff; }
+  .banner__texto__menu--travel, .banner__texto__menu--best {
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    color: #fff;
+    text-decoration: none; }
+
+.banner__texto__avatar {
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #fff; }
+
+/* MAIN */
+.postG01 figcaption h4,
+.postG02 figcaption h4 {
+  font-family: helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.42;
+  text-align: left;
+  color: #fff; }
+
+/* *****************************
+ ++++++++++ $ENLACES +++++++++++
+ ***************************** */
+/* Tipos de enlaces */
+/* **************** */
+/* Enlaces Internos */
+/* Enlaces Externos */
+/* *****************************
+ +++++++ $MENUS ++++++
+ ***************************** */
+/* Menu desplegable */
+input,
+.desplegable {
   display: none; }
 
 input:checked ~ .desplegable {
   display: block; }
+
+/* *****************************
+ +++++++ $IMAGENES ++++++
+ ***************************** */
+/* Texto encima de las img's */
+.postG01,
+.postG02 {
+  position: relative; }
+  .postG01 figcaption,
+  .postG02 figcaption {
+    color: #fff;
+    position: absolute;
+    left: 3rem;
+    bottom: 25%; }
+
+/* *****************************
+ +++++++ $BANNERS ++++++
+ ***************************** */
+/* BANNER */
+.banner {
+  height: 450px;
+  background: url(../assets/img/desktop/@1x/oscurecer.png), url(../assets/img/desktop/@1x/banner.jpg) center/cover no-repeat; }
+  .banner .banner__texto {
+    color: white; }
+
+/* *****************************
+ +++++++ $GRIDS ++++++
+ ***************************** */
+/* Grid Header */
+.banner__texto {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0px repeat(2, 1fr) 0px;
+  grid-template-columns: 0px 1fr 0px;
+  justify-items: center;
+  grid-gap: 30px; }
+  .banner__texto__titulo {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: end; }
+  .banner__texto__menu {
+    grid-row: 3/4;
+    grid-column: 2/4; }
+    .banner__texto__menu--travel {
+      margin-right: 3rem; }
+  .banner__texto__avatar {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: end; }
+
+/* Grid Main */
+main {
+  background-color: #faffeb; }
+  main .grid_main {
+    display: grid;
+    grid-template-rows: 0px 1fr 0.5fr 0.5fr 1fr 0px;
+    grid-template-columns: 0px 50% 25% 0px;
+    grid-gap: 50px;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    main .grid_main .postG01 {
+      grid-row: 2/4;
+      grid-column: 2/3; }
+    main .grid_main .postG02 {
+      grid-row: 4/6;
+      grid-column: 2/3; }
+    main .grid_main .postP01 {
+      grid-row: 2/3;
+      grid-column: 3/4; }
+    main .grid_main .postP02 {
+      grid-row: 3/5;
+      grid-column: 3/4; }
+    main .grid_main .postP03 {
+      grid-row: 5/6;
+      grid-column: 3/4; }
+
+/* *****************************
+ +++++++ $LAYOUTS ++++++
+ ***************************** */
