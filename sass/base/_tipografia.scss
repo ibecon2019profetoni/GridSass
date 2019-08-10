@@ -31,9 +31,22 @@ html {
 }
 
 /* MAIN */
+// izquierda
 .postG01,
 .postG02 {
 	& figcaption h4 {
 		@include titulo-sobre;
+	}
+}
+
+// derecha
+.postP01,
+.postP02,
+.postP03 {
+	& figcaption h4 {
+		@include titulo-figcaption;
+	}
+	& figcaption p {
+		@include parrafo-figcaption;
 	}
 }

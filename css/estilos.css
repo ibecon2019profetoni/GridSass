@@ -287,6 +287,26 @@ html {
   text-align: left;
   color: #fff; }
 
+.postP01 figcaption h4,
+.postP02 figcaption h4,
+.postP03 figcaption h4 {
+  font-family: acuminPro;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.63;
+  text-align: left;
+  color: #202124; }
+
+.postP01 figcaption p,
+.postP02 figcaption p,
+.postP03 figcaption p {
+  font-family: helvetica;
+  font-size: 13px;
+  font-style: oblique;
+  line-height: 2;
+  text-align: left;
+  color: #a6adb4; }
+
 /* *****************************
  ++++++++++ $ENLACES +++++++++++
  ***************************** */
@@ -312,12 +332,20 @@ input:checked ~ .desplegable {
 .postG01,
 .postG02 {
   position: relative; }
+  .postG01 img,
+  .postG02 img {
+    width: 100%; }
   .postG01 figcaption,
   .postG02 figcaption {
     color: #fff;
     position: absolute;
     left: 3rem;
     bottom: 25%; }
+
+.postP01 img,
+.postP02 img,
+.postP03 img {
+  width: 100%; }
 
 /* *****************************
  +++++++ $BANNERS ++++++
@@ -348,7 +376,7 @@ input:checked ~ .desplegable {
     grid-row: 3/4;
     grid-column: 2/4; }
     .banner__texto__menu--travel {
-      margin-right: 3rem; }
+      margin-right: 1rem; }
   .banner__texto__avatar {
     grid-row: 3/4;
     grid-column: 2/4;
@@ -361,8 +389,8 @@ main {
   main .grid_main {
     display: grid;
     grid-template-rows: 0px 1fr 0.5fr 0.5fr 1fr 0px;
-    grid-template-columns: 0px 50% 25% 0px;
-    grid-gap: 50px;
+    grid-template-columns: 0px 800px 400px 0px;
+    grid-gap: 40px;
     -webkit-box-pack: center;
             justify-content: center; }
     main .grid_main .postG01 {
@@ -370,13 +398,15 @@ main {
       grid-column: 2/3; }
     main .grid_main .postG02 {
       grid-row: 4/6;
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      align-self: end; }
     main .grid_main .postP01 {
       grid-row: 2/3;
       grid-column: 3/4; }
     main .grid_main .postP02 {
       grid-row: 3/5;
-      grid-column: 3/4; }
+      grid-column: 3/4;
+      align-self: center; }
     main .grid_main .postP03 {
       grid-row: 5/6;
       grid-column: 3/4; }

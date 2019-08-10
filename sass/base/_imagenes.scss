@@ -7,10 +7,22 @@
 .postG02 {
 	position: relative;
 
+	img {
+		width: 100%;
+	}
+
 	figcaption {
 		color: map-get(map-get($colores, grises), blanco);
 		position: absolute;
 		left: 3rem;
 		bottom: 25%;
+	}
+}
+
+.postP01,
+.postP02,
+.postP03 {
+	img {
+		width: 100%;
 	}
 }
